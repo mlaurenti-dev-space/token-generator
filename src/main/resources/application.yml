@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: token-generator
+  doc:
+    swagger-ui:
+      path: /swagger-ui.html
+server:
+  port: 8083
+
+secret:
+  key: ${SECRET_KEY}
+  algorithm: HS256
+  expiration: 604800  # Token expiration time in seconds
+
+
+
+
